@@ -33,3 +33,10 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+install(
+  PROGRAMS
+    scripts/echo_args.sh
+  DESTINATION
+    lib/${PROJECT_NAME}
+)
